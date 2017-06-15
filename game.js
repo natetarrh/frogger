@@ -174,15 +174,19 @@ var draw_frog = function() {
         }
         if (game.facing === 'u') {
             context.drawImage(sprites, 12, 369, 23, 17, game.posX, game.posY, 23, 17);
+            game.width = 23, game.height = 17;
         }
         else if (game.facing === 'd') {
             context.drawImage(sprites, 80, 369, 23, 17, game.posX, game.posY, 23, 17);
+            game.width = 23, game.height = 17;
         }
         else if (game.facing === 'l') {
             context.drawImage(sprites, 80, 335, 19, 23, game.posX, game.posY, 19, 23);
+            game.width = 19, game.height = 23;
         }
         else if (game.facing === 'r') {
             context.drawImage(sprites, 12, 335, 19, 23, game.posX, game.posY, 19, 23);
+            game.width = 19, game.height = 23;
         }
     }
 };
